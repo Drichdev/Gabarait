@@ -2,6 +2,7 @@
     --bleu: #0087cc;
     --blanc: white;
     --gris: rgb(94, 93, 93);
+    --hov: #ddd;
 }
 *{
     margin: 0;
@@ -45,6 +46,10 @@ header .head-bottom ul li{
 
 header .head-bottom ul li a{
     color: var(--blanc);
+}
+
+header .head-bottom ul li a:hover{
+    color: var(--hov);
 }
 
 header .head-bottom ul li:nth-child(5){
