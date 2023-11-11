@@ -1,6 +1,7 @@
 :root{
     --bleu: #0087cc;
     --blanc: white;
+    --gris: rgb(80, 80, 80);
 }
 *{
     margin: 0;
@@ -49,6 +50,12 @@ header .head-bottom ul li:nth-child(5){
     margin-right: 30px;
 }
 
+#one-title, #two-title, #three-title{
+    margin: 10px 0;
+    color: var(--bleu);
+    font-weight: bold;
+}
+
 main{
     display: flex;
     padding: 50px;
@@ -59,13 +66,20 @@ main{
 }
 .one img, .three img{
     width: 25vw;
-    height: 300px;
     background-size: cover;
 }
 
+.one img{
+    max-height: 400px;
+
+}
+.three img{
+    max-height: 350px;
+
+}
 .two img{
     width: 30vw;
-    height: 300px;
+    max-height: 300px;
     background-size: cover;
 }
 
@@ -79,8 +93,39 @@ footer{
     align-items: center;
     margin-bottom: 20px;
 }
+footer h1{
+    color: var(--bleu);
+}
+footer h2{
+    font-weight: bold;
+}
 
+footer p {
+    margin-bottom: 20px;
+    color: var(--gris);
+}
+
+.log img{
+    margin-left: 5px;
+}
 .log{
     display: flex;
     align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+    header{
+        width: 100%;
+    }
+    main{
+        width: 95%;
+        padding: 20px;
+    }
+    .one, .two, .three{
+        margin: 0 10px;
+    }
+
+    footer{
+        margin-top: 50px;
+    }
 }
